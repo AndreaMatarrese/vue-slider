@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stile -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <!-- vue e bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"><script></script>
+    <title>Vue slider</title>
+</head>
+<body>
+    <div class="container-fluid p-5 bg-dark">
+        <div id="root" class="slider text-light">
+            <div class="immagine col-12">
+                <img v-bind:src="image" alt="img" v-bind:class="imageClass">
+            </div>
+            <div class="controls">
+                <h2>{{ title }}</h2>
+                <p>{{ body }}</p>
+                <button @click="Prev">&larr;</button>
+                <button @click="Next">&rarr;</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

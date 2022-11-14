@@ -1,0 +1,29 @@
+.img-slider{
+    max-width:100%;
+    max-height:100%;
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+}
+.immagine{
+    width: 800px;
+    height: 600px;
+   
+}
+.text{
+    position: absolute;
+    bottom: 0;
+}
+.slider{
+    position: relative;
+}
+.controls{
+    position: absolute;
+    bottom: 0;
+}
+.active{
+    display: block;
+}
+.hidden{
+    display: none;
+}
