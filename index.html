@@ -14,16 +14,19 @@
     <title>Vue slider</title>
 </head>
 <body>
-    <div class="container-fluid p-5 bg-dark">
-        <div id="root" class="slider text-light">
-            <div class="immagine col-12">
-                <img v-bind:src="image" alt="img" v-bind:class="imageClass">
+    <div class="container-fluid p-5 bg-dark contenitore" id="root">
+       <div class="contents"> 
+            <div class="slider">
+                <div class="text">
+                    <h2>{{ title }}</h2>
+                    <p>{{ body }}</p>
+                </div>
+                <img src="img/01.webp" alt="img" :class="imageClass">
             </div>
+        
             <div class="controls">
-                <h2>{{ title }}</h2>
-                <p>{{ body }}</p>
-                <button @click="Prev">&larr;</button>
-                <button @click="Next">&rarr;</button>
+                <button @click="Prev" class="prev">&larr;</button>
+                <button @click="Next" class="next">&rarr;</button>
             </div>
         </div>
     </div>

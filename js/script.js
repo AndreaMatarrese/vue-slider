@@ -6,53 +6,47 @@
 // Consigli del giorno:
 // - regola d'oro: riciclare ovunque possibile! Questo significa che per la parte di markup possiamo recuperare html e css dell'esercizio svolto qualche giorno fa: è già tutto pronto!
 // - il riciclo spesso va a braccetto con le funzioni! Sapendole sfruttare bene, l'esercizio si riduce a poche righe ;)
-// arrImages = [
-//     {
-//         title: 'Marvel\'s Spiderman Miles Morales',
-//         body: 'Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.',
-//         image: 'img/01.webp',
-//         imageClass: 'img-slider'
-//     },
-//     {
-//         title: 'Marvel\'s Spiderman Miles Morales',
-//         body: 'Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.',
-//         image: 'img/02.webp',
-//         imageClass: 'img-slider'
-//     },
-//     {
-//         title: 'Marvel\'s Spiderman Miles Morales',
-//         body: 'Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.',
-//         image: 'img/03.webp',
-//         imageClass: 'img-slider'
-//     },
-//     {
-//         title: 'Marvel\'s Spiderman Miles Morales',
-//         body: 'Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.',
-//         image: 'img/01.webp',
-//         imageClass: 'img-slider'
-//     },
-//     {
-//         title: 'Marvel\'s Spiderman Miles Morales',
-//         body: 'Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.',
-//         image: 'img/01.webp',
-//         imageClass: 'img-slider'
-//     },
-// ]
+
 const app = new Vue({
     el: '#root',
     data: {
-        title: 'Marvel\'s Spiderman Miles Morales',
-        body: 'Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.',
-        image: 'img/01.webp',
-        imageClass: 'img-slider'
+        
+        arrImages:[
+            {
+                title: 'Marvel\'s Spiderman Miles Morales',
+                body: 'Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.',
+                image: 'img/01.webp',
+                imageClass2: 'img-slider'
+            },
+            {
+                title: 'Marvel\'s Spiderman Miles Morales',
+                body: 'Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.',
+                image: 'img/02.webp',
+                imageClass2: 'img-slider'
+            },
+            {
+                title: 'Marvel\'s Spiderman Miles Morales',
+                body: 'Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.',
+                image: 'img/03.webp',
+                imageClass: 'img-slider'
+            },
+            {
+                title: 'Marvel\'s Spiderman Miles Morales',
+                body: 'Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.',
+                image: 'img/01.webp',
+                imageClass: 'img-slider'
+            },
+            {
+                title: 'Marvel\'s Spiderman Miles Morales',
+                body: 'Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.',
+                image: 'img/01.webp',
+                imageClass: 'img-slider'
+            },
+        ],
+
     },
     methods:{
-        Next: function(){
-           this.imageClass = 'hidden img-slider'
-        },
-        Prev: function(){
-            this.imageClass = 'img-slider'
-        }
+       
     }
 
 });
